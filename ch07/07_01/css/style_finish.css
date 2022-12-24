@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 500;   
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+p {
+    font-size: 1.4rem;
+    padding-bottom: .5em;
+}
+
+li {
+    font-size: 1.4rem;
+}
+
+a {
+    color: #f6cc11;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #3e3e3e;
+    text-align: center;
+}
+header h1 {
+    color: #b4b4b4;
+    font-size: 3.5rem;
+    background-image: url(../images/favicon.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 15%;
+    background-size: 15%;
+    background-position: 5px 12px;
+    padding: 1rem 0 1rem 6rem;
+    display: inline-block;
+}
+
+article.hero {
+    background-image: url(../images/header-bg-visit-sm.jpg);
+    min-height: 100px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em 1em 2em 50%;
+    text-align: left;
+    text-shadow: 1px 1px 3px #fff;
+}
+
+article.hero h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+    color: #3e3e3e;
+}
+
+article.hero button {
+    border-radius: 1em;
+    border: solid 1px #989898;
+    padding: .25em .5em;
+    margin-top: 1em;
+    background-color: rgba(255,255,255,.7);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+section.info article {
+    padding: 2em;
+}
+
+section.info article:nth-child(1) {
+    background-color: #f9e49d;
+}
+
+section.info article:nth-child(2) {
+    background-color: #d6cac2;
+}
+
+section.info article:nth-child(3) {
+    background-color: #b9cada;
+}
+
+section.info article:nth-child(4) {
+    background-color: #f6cc11;
+}
+
+#subscribe {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#subscribe label {
+    font-size: 14px;
+    padding-right: .5em;
+}
+
+#subscribe input {
+    height: 20px;
+    border: none;
+}
+
+#subscribe input[type=email] {
+    width: 200px;
+    padding: 4px;
+    outline: none;
+}
+
+#subscribe input[type=submit] {
+    width: 20px;
+    background-image: url(../images/rightArrow.svg);
+    background-size: 35%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #3e3e3e;
+}
+
+section.events {
+    padding: 2em;
+    text-align: center;
+}
+
+article.evtCards {
+    max-width: 400px;
+    margin: 1em auto 0;
+}
+
+article.evtCards img {
+    border: 1px solid #dedede;
+}
+
+p.date {
+    border-top: 1px solid #dedede;
+    color: #ce6f0d;
+    font-style: italic;
+    margin: 0 2em;
+}
+
+article.evtCards button {
+    border-radius: 1em;
+    border: none;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    background-color: #ce6f0d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+footer p:last-of-type {
+    margin: 1em auto auto;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width:650px) {
+    article.hero {
+        min-height: 250px;
+        padding-top: 4em;
+        background-image: url(../images/header-bg-visit-lg.jpg);
+        background-position: 50% 50%;
+        font-size: 15px;
+    }
+    
+    article.hero h2 {
+        max-width: 255px;
+        font-size: 1.4em;
+    } 
+    
+    section.info {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1250px;
+        margin: auto;
+    }
+    
+    section.info article {
+        max-width: 625px;
+    }
+    
+    section.events {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        max-width: 1250px;
+        margin: auto;
+    }
+    
+    section.events h1 {
+        grid-column: 1 / -1;
+    }
+}

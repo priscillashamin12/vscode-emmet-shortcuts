@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet demo | 04-08</title>
+</head>
+<body>
+<!-- filter for commenting tags -->
+   .wrapper>.product*6>.productItem$>h1{Product Name}+img[images/prod$.jpg]+p>lorem
+    
+    <hr>
+<!-- filter for writing out code snippets (escapes html characters) -->
+    <div class="wrapper">
+        <article class="codeEample">
+            <h1>HTML code examples</h1>
+            <p>In order to render out the following code</p>
+            <footer>
+                <p><span>beehappbee Honey Farm</span>&copy; 2021</p>
+            </footer>
+            <p>you will need to write this:</p>
+            footer>p>span{beehappbee Honey Farm}+{&copy; 2021}
+        </article>
+    </div>
+    
+    <hr> 
+<!-- outputs code a single line -->
+    ul>li{Item $}*3
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
